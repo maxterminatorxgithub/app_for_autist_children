@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <ImageView
+        android:id="@+id/category_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="90" />
+
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="הוסף קטגוריה"
+        android:textColor="@color/appDark"
+        android:textSize="35dp" />
+</LinearLayout>

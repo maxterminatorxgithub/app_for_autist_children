@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contact_us_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button123"
+        android:layout_centerHorizontal="true"
+        android:text="צור קשר"
+        android:textSize="45dp" />
+
+    <Button
+        android:id="@+id/button123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="חזור" />
+
+    <EditText
+        android:id="@+id/nametxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="שם:"
+        android:textDirection="rtl"
+        android:inputType="textPersonName"
+        android:textSize="20dip" />
+
+    <EditText
+        android:id="@+id/massagetxt"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        android:textSize="20dip"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:hint="הכנס הודעה כאן:"
+        android:textDirection="rtl"
+        android:layout_below="@+id/nametxt"
+        android:layout_centerHorizontal="true" />
+
+    <com.example.maxterminatorx.ramilevyhelpapp.GifView
+        android:id="@+id/loadingGif"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"/>
+
+    <Button
+        android:id="@+id/send_msg_button"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="14dp"
+        android:text="שלח"
+        android:textSize="35dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+
+</RelativeLayout>

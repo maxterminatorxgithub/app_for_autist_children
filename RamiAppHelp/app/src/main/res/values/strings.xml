@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">קל להיות בקשר</string>
+
+    <string name="en_edit">Edit</string>
+
+
+    <string name="he_edit">עריכה</string>
+    <string name="he_del">מחיקה</string>
+    <string name="he_dup">שכפול</string>
+    <string name="he_reset">איפוס</string>
+    <string name="he_title">קל להיות בקשר</string>
+    <string name="he_screen_parent">מסך הורים</string>
+    <string name="he_screen_child">מסך ילד</string>
+
+
+    <string name="right_arrow">&lt;-</string>
+    <string name="left_arrow">-&gt;</string>
+    <string name="minus"> - </string>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxterminatorx.ramilevyhelpapp.EntryActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="הורה" />
+
+        <Button
+            android:id="@+id/btn_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ילד" />
+
+        <EditText
+            android:id="@+id/txt_child_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="הכנס קוד ילד"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="אמת"
+            android:visibility="invisible" />
+        <ProgressBar
+            android:id="@+id/connection_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/connection_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="אנא המתן..."
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

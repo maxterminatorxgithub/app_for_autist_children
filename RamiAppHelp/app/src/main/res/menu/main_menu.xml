@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainMenu"
+    >
+
+        <item android:id="@+id/profileMenuItem"
+              android:title="פרופיל אישי"
+            />
+        <item android:id="@+id/settingsMenuItem"
+              android:title="הגדרות"/>
+        <item android:id="@+id/ordersMenuItem"
+              android:title="הוראות"/>
+        <item android:id="@+id/videoTutorialsMenuItem"
+            android:title="סרטוני הדרכה"/>
+        <item android:id="@+id/contactUsMenuItem"
+            android:title="צור קשר"/>
+        <item android:id="@+id/returnToEntryMenuItem"
+            android:title="יציאה למסך כניסה"/>
+        <item android:id="@+id/child_list"
+            android:title="רשימת ילדים שלי"/>
+
+
+
+</menu>

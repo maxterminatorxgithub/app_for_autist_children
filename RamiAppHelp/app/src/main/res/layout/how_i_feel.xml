@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/op1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_like" />
+
+        <ImageView
+            android:id="@+id/op2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_panic" />
+
+        <ImageView
+            android:id="@+id/op3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_mad" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/op4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/smile_simple" />
+
+        <ImageView
+            android:id="@+id/op5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_cool" />
+
+        <ImageView
+            android:id="@+id/op6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_sleep" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/op7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_1" />
+
+        <ImageView
+            android:id="@+id/op8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_think" />
+
+        <ImageView
+            android:id="@+id/op9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_prey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/op10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_sick" />
+
+        <ImageView
+            android:id="@+id/op11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/smile_happy" />
+
+        <ImageView
+            android:id="@+id/op12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:foreground="@drawable/border"
+            app:srcCompat="@drawable/smile_heat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="חזור" />
+    </LinearLayout>
+
+</LinearLayout>

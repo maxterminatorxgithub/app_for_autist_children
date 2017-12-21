@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mode_screen_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="36"
+            android:gravity="center"
+            android:text="@string/he_screen_parent"
+            android:textColor="@color/appOrange"
+            android:textDirection="rtl"
+            android:textSize="24dip" />
+
+        <TextView
+            android:id="@+id/minus_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="@string/minus"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/app_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="@string/he_title"
+            android:textColor="@color/appDark"
+            android:textDirection="rtl"
+            android:textSize="28dip" />
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/line_separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appRed"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/control_panel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl">
+
+            <com.example.maxterminatorx.ramilevyhelpapp.BoardButton
+                android:id="@+id/button_step_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/appOrange"
+                android:gravity="center"
+                android:text="@string/right_arrow"
+                android:textSize="25dip" />
+
+            <com.example.maxterminatorx.ramilevyhelpapp.BoardButton
+                android:id="@+id/button_step_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/button_step_right"
+                android:layout_toRightOf="@+id/button_step_right"
+                android:background="@color/appOrange"
+                android:gravity="center"
+                android:text="@string/left_arrow"
+                android:textSize="8sp" />
+
+            <com.example.maxterminatorx.ramilevyhelpapp.BoardButton
+                android:id="@+id/button_duplicate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/button_step_left"
+                android:layout_toRightOf="@+id/button_step_left"
+                android:background="@color/appOrange"
+                android:gravity="center"
+                android:text="@string/he_dup"
+                android:textSize="15dip" />
+
+            <com.example.maxterminatorx.ramilevyhelpapp.BoardButton
+                android:id="@+id/button_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/button_duplicate"
+                android:layout_toRightOf="@+id/button_duplicate"
+                android:background="@color/appOrange"
+                android:gravity="center"
+                android:text="@string/he_reset"
+                android:textSize="15dip" />
+
+            <com.example.maxterminatorx.ramilevyhelpapp.BoardButton
+                android:id="@+id/button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/button_reset"
+                android:layout_toRightOf="@+id/button_reset"
+                android:background="@color/appOrange"
+                android:gravity="center"
+                android:text="@string/he_del"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/options_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@drawable/options" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/toolbar_layout"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/add_category_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/category_list_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal"></LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <GridLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:columnCount="3"
+            android:rowCount="2">
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

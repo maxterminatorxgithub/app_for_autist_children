@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/options_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            app:srcCompat="@drawable/opt_add" />
+
+        <ImageView
+            android:id="@+id/sound_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            app:srcCompat="@drawable/opt_sound" />
+
+        <ImageView
+            android:id="@+id/camera_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            app:srcCompat="@drawable/opt_camera" />
+    </LinearLayout>
+
+
+</LinearLayout>

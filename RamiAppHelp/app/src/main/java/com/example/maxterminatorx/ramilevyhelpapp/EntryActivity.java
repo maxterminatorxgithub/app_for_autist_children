@@ -37,8 +37,8 @@ public class EntryActivity extends AppCompatActivity {
         static final int SERVER_CONNECTION_ERROR = -1;
         static final int PARENT_NOT_EXIST = 0;
         static final int PARENT_EXIST = 1;
-        static final int CHILD_NOT_FOUND = 2;
-        static final int CHILD_FOUND = 3;
+        static final int CHILD_NOT_FOUND = 6;
+        static final int CHILD_FOUND = 7;
 
         private EntryActivity ea;
 
@@ -218,17 +218,14 @@ public class EntryActivity extends AppCompatActivity {
             String finalChildCode = childCode.getText().toString().toLowerCase();
 
             if(finalChildCode.length()!=10){
-                //snackbar.make(btnSubmit, "קוד ילד חייב להכיל 10 תווים אותיות באנגלית וספרות.", Snackbar.LENGTH_LONG);
                 skChildCodeFormat.show();
                 return;
             }
 
 
+            AppMaster.server.checkChildExist(finalChildCode,entryHandler);
 
-            editPrefs.putString("child_code",finalChildCode);
-            editPrefs.commit();
 
-            childMode();
         });
 
 

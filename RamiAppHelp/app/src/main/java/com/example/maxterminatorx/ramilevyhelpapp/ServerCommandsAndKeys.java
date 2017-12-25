@@ -9,7 +9,7 @@ public class ServerCommandsAndKeys {
     //server keys
     public static final int SERVER_PORT = 3000;
 
-    public static final String MY_SERVER_IP = "192.168.1.253";
+    public static final String MY_SERVER_IP = "192.168.1.128";
 
     public static final String SERVER_IP = "192.168.50.67";
 

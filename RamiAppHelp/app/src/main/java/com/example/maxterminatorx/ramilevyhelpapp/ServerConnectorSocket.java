@@ -105,21 +105,27 @@ public class ServerConnectorSocket {
 
 
     public void checkChildExist(String childHash,Handler sender){
+
+        final String finalChildHash = childHash.toLowerCase();
+
+
         new Thread(){
 
             @Override
             public void run(){
                 try(Socket client = new Socket(serverIp,serverPort);
-                    ObjectOutputStream os = new ObjectOutputStream(client.getOutputStream());
-                    ObjectInputStream is = new ObjectInputStream(client.getInputStream())){
+                    OutputStream os = client.getOutputStream();
+                    ObjectOutputStream oos = new ObjectOutputStream(os);
+                    InputStream is = client.getInputStream();
+                    ObjectInputStream ois = new ObjectInputStream(is)){
                     client.setSoTimeout(5000);
-                    os.writeByte(ServerCommandsAndKeys.CMD_CHECK_IS_CHILD_EXIST);
-                    os.writeObject(childHash);
+                    os.write(ServerCommandsAndKeys.CMD_CHECK_IS_CHILD_EXIST);
+                    oos.writeObject(childHash);
 
 
-
-
-                    sender.sendEmptyMessage(is.read());
+                    int result = is.read();
+                    Log.i("result",String.valueOf(result));
+                    sender.sendEmptyMessage(result);
 
                 }catch(IOException ioex){
                     String msg = ioex.toString();
